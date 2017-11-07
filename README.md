@@ -31,3 +31,7 @@ PS> mkdir »naam-van-de-map«
 PS> c »naam-van-de-map«
 PS> git submodule add --branch v4-dev --depth 1 https://github.com/twbs/bootstrap/ _vendor/bootstrap
 ```
+
+### Voorbeeldsite
+
+<http://www.gdm.gent/1718-nmd2-code-irent/>
