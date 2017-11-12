@@ -1,6 +1,7 @@
 ---
 published: true
-# Page Variables
+# Custom Page Variables
+# ─────────────────────
 title: Style Guide
 ---
 [Terug]({{ site.baseurl }}{% link pages/index.html %}){:.btn.btn-primary.mt-1}
