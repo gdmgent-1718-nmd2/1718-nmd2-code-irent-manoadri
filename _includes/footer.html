@@ -1,3 +1,5 @@
 <nav class="navbar fixed-bottom navbar-light bg-light">
-    <a href="{{ 'style-guide' | relative_url }}">Style Guide</a>
+{%- if site.show-style-guide %}
+    <a href="{{ site.baseurl }}{% link style-guide/index.md %}" class="btn">Style Guide</a>
+{%- endif %}
 </nav>

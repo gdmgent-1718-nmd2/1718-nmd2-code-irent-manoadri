@@ -1,9 +1,9 @@
 ---
-layout   : style-guide
-permalink: /style-guide
-#
+published: true
+# Page Variables
 title: Style Guide
 ---
+[Terug]({{ site.baseurl }}{% link pages/index.html %}){:.btn.btn-primary.mt-1}
 
 Style Guide
 ===========

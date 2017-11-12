@@ -1,15 +1,31 @@
+# ╔════════════════════════════════════════════════════════════════════════════╗
+# ║ This file is only read once per server start. Restart server when changed! ║
+# ╚════════════════════════════════════════════════════════════════════════════╝
+
 # Site settings
-# -------------
+# ─────────────
 baseurl: /1718-nmd2-code-irent # the subpath of your site, e.g. /blog
 # host   : 127.0.0.1
 # port   : 4000
 
-# Site variables
-# ---------------
+# Custom Site variables
+# ─────────────────────
+show-style-guide: true # Show style guide in footer.
 title: iRent
 
 # Build settings
-# --------------
+# ──────────────
+defaults:
+  -
+    scope:
+      path: "style-guide"
+    values:
+      layout: style-guide
+
+exclude:
+  - Gemfile
+  - README.md
+
 plugins:
 # - jekyll-feed
 # - jekyll-gist
@@ -19,11 +35,9 @@ plugins:
 # - jekyll-seo-tag
 # - jekyll-sitemap
   - jemoji
+
 sass:
-#  style: nested
+  style: nested
 #  style: expanded
 #  style: compact
-  style: compressed
-exclude:
-  - Gemfile
-  - README.md
+#  style: compressed
