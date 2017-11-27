@@ -43,3 +43,15 @@ h4.style-guide {
     content: counter(style-guide-h2) '.' counter(style-guide-h3) '.' counter(style-guide-h4);
   }
 }
+
+h1, h2, h3 {
+  &.styleguide {
+
+  }
+}
+
+@each $animal in puma, sea slug, egret, salamander {
+  .#{$animal}-icon {
+    background-image: url('/images/#{$animal}.png');
+  }
+}
