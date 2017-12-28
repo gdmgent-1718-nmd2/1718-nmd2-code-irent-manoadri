@@ -1,8 +1,4 @@
 [submodule "_vendor/bootstrap"]
 	path = _vendor/bootstrap
-<<<<<<< HEAD
-	url = https://github.com/twbs/bootstrap
-=======
 	url = https://github.com/twbs/bootstrap/
->>>>>>> 35ee00574967047c1491e9402279aacbab95729c
 	branch = v4-dev

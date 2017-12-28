@@ -4,11 +4,7 @@
 
 # Site settings
 # ─────────────
-<<<<<<< HEAD
 baseurl: /1718-nmd2-code-irent-manoadri # the subpath of your site, e.g. /blog
-=======
-baseurl: /1718-nmd2-code-irent # the subpath of your site, e.g. /blog
->>>>>>> 35ee00574967047c1491e9402279aacbab95729c
 # host   : 127.0.0.1
 # port   : 4000
 
