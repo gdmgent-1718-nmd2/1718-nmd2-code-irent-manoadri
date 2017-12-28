@@ -1,56 +1,317 @@
-@import
-"bootstrap-variables",                  // See _bootstrap-variables.scss
-"../_vendor/bootstrap/scss/bootstrap";  // See _vendor/bootstrap/scss/bootstrap.scss
+@import "bootstrap-variables", // See _bootstrap-variables.scss
+"../_vendor/bootstrap/scss/bootstrap"; // See _vendor/bootstrap/scss/bootstrap.scss
 
 /* NAVIGATION BAR
 -------------------------------------------------- */
+
 #navigation {
-min-height: 70px !important;
-padding-top: 10px;
+    min-height: 70px !important;
+    padding-top: 10px;
 }
-#navigation .navbar-brand {
-padding-right: 28px;
-width: 280px;
-border-right: 3px solid rgba(255, 255, 255, 0.1);
-font-family: "hobo-std", sans-serif;
-font-style: italic;
-font-size: 26px !important;
-color: #5fcf80 !important;
-}
+
 #navigation .navbar-brand .site-logo {
-float: left;
-margin-top: -10px;
-margin-right: 1rem;
-width: 250px;
+    float: left;
+    margin-top: -10px;
+    margin-right: 1rem;
+    width: 250px;
 }
-#navigation #navbar {
-float: right !important;
-margin-right: -15px;
-font-family: 'Helvetica Rounded', Arial, sans-serif;
-font-size: 16px;
-font-weight: 400;
-line-height: 38px;
-text-shadow: 0 1px 3px rgba(0, 0, 0, .5) !important;
+
+.navbar {
+    background-color: $second;
+    filter: drop-shadow(0 0 10px #b8b8b8);
 }
-@media (max-width: 768px) {
-#navigation #navbar {
-    float: none !important;
-    margin-right: 0;
+
+.webicoon {
+    display: block;
 }
+
+.navbar-toggler-icon {
+    border-bottom: none;
 }
-#navigation #navbar .navbar-nav li a {
-color: #b2bbbd !important;
+
+@media screen and (min-width: 768px) {
+    #navigation #navbar {
+        float: none !important;
+        margin-right: 0;
+    }
 }
-#navigation #navbar .navbar-nav li a:hover,
-#navigation #navbar .navbar-nav li a:focus {
-color: #ffffff !important;
-border-bottom: 2px solid #ffffff !important;
+
+@media screen and (min-width: 992px) {
+    .nav-item {
+        padding-left: 20px;
+    }
 }
-#navigation #navbar .navbar-nav .active a {
-color: #ffffff !important;
-border-bottom: 2px solid #ffffff !important;
+
+
+/* CONTAINER
+-------------------------------------------------- */
+
+.row2 {
+    margin-left:5px;
 }
-#navigation #navbar .navbar-nav .dropdown-menu li a {
-color: #515151 !important;
-text-shadow: none !important;
+
+.reviews {
+    margin-top:100px;
 }
+
+.container2 {
+    margin-top: 50px;
+}
+
+.signin{
+    position: relative;
+    padding-top:25px;
+    padding-bottom: 80px;
+}
+
+/* PROMO
+-------------------------------------------------- */
+
+.actie {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.promowatch {
+    margin-top: 50px;
+    filter: drop-shadow(0 0 10px #b8b8b8);
+}
+
+
+.slogan {
+    margin-top: 30px;
+    padding-top: 75px;
+    padding-bottom: 85px;
+    color: #ffffff;
+}
+
+.el {
+    background-image: url(../../images/element4.png);
+    background-repeat: no-repeat;
+    background-position: -30px;
+    overflow: hidden;
+}
+
+
+@media screen and (min-width: 768px) {
+    .slogan{
+        padding-top: 70px;
+    }
+    .promowatch{
+        padding-top: 25px;
+    }
+
+    .actie {
+        text-align: right;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .slogan{
+        padding-top:130px;
+    }
+
+    .promowatch{
+        padding-top: 45px;
+    }
+
+    .actie {
+        padding-top: 100px;
+    }
+
+}
+
+
+/* BUTTONS
+-------------------------------------------------- */
+
+.btnoffer {
+    margin: 4px;
+}
+
+#myBtn {
+    display: inline-block;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    border: none;
+    outline: none;
+    background-color: #2EABD3;
+    color: $second;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 30px;
+    width: 36px;
+    height: 36px;
+  }
+  
+  #myBtn:hover {
+    background-color: #0F7B9D;
+  }
+
+
+/* ELEMENTS
+-------------------------------------------------- */
+
+.fa-star {
+    color: rgb(175, 175, 175);
+}
+
+.checked {
+    color: rgb(255, 217, 0);
+}
+
+.stroke {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    margin-bottom: 15px;
+}
+
+.tstroke {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(189, 189, 189);
+    margin: 70px;
+}
+
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #FF5555;
+    box-sizing: border-box;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+span.psw {
+    padding-top: 16px;
+
+}
+
+.frame {
+    padding: 25px;
+    margin-left: 70px;
+    border-width: 2px;
+    border-style: groove;
+  }
+
+.frame2 {
+    padding: 25px;
+    border-width: 2px;
+    border-style: groove;
+    margin-bottom: 40px;
+  }
+
+.frame3 {
+
+    padding: 35px;
+    border-width: 2px;
+    border-style: groove;
+    margin-top: 40px;
+}
+
+.progress {
+    margin-bottom: 70px;
+}
+
+
+
+/* TITLES
+-------------------------------------------------- */
+
+.title1 {
+    margin-top: 120px;
+    font-family: 'Century Gothic';
+    text-align: center;
+}
+
+.title2 {
+    margin: 20px;
+    margin-bottom: 50px;
+    font-family: 'Century Gothic';
+    text-align: center;
+}
+
+.header {
+    color: #0F7B9D;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.header2 {
+    color: #0F7B9D;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.grey {
+    color: #979797;
+}
+
+@media screen and (min-width: 768px) {
+    .title1 {
+        margin-top: 230px;
+    }
+}
+
+/* FOOTER
+-------------------------------------------------- */
+
+footer {
+    margin-top: 200px;
+  }
+
+.tfooter {
+    margin-top: 50px;
+    color: #2EABD3;
+    text-align: center;
+}
+
+.stroke {
+    width: 100%;
+    height: 2px;
+    background-color: #2EABD3;
+    margin-bottom: 15px;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 28px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 25px 4px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-pinterest {
+    background: #cb2027;
+    color: white;
+  }
+
+  .fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+  

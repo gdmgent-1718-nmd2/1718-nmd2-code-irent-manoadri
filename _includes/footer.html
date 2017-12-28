@@ -1,5 +1,45 @@
-<nav class="navbar navbar-light bg-light">
-    {%- if site.show-style-guide %}
-        <a href="{{ site.baseurl }}{% link style-guide/index.md %}" class="btn">Style Guide</a>
-    {%- endif %}
-</nav>
+<!-- Footer -->
+
+<footer class="navbar navbar-light bg-light">
+
+<div class="container justify-content-center">
+    <div class="row">
+        <div class="col-12 col-md-4 text center">
+            <p class="tfooter">About us</p>
+            <div class="stroke"></div>
+            <img src="{{ site.baseurl }}/images/webicoon.png" class="mx-auto d-block" alt="Logo" width="20%">
+        <div class="row justify-content-center">                   
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-pinterest"></a>
+                <a href="#" class="fa fa-snapchat-ghost"></a>                      
+        </div>
+        </div>
+
+        <div class="col-12 col-md-4 text-center">
+            <p class="tfooter">Information</p>
+            <div class="stroke"></div>                
+                <p><a href="{{ site.baseurl }}{% link pages/contact.html %}" class="">Contact</a></p>
+                <p><a href="{{ site.baseurl }}{% link pages/disclaimer.html %}" class="">Disclaimer</a></p>
+                <p><a href="{{ site.baseurl }}{% link pages/terms.html %}" class="">Terms and Conditions</a></p>
+                <p><a href="" class="">Payments & returns</a></p>
+        </div>
+
+        <div class="col-12 col-md-4 text-center">
+            <p class="tfooter">Subscribe</p>
+            <div class="stroke"></div>
+            <form>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="exampleFormControlInput" placeholder="your email">
+                </div>
+            </form>
+            <a class="col-12 btn btn-primary" href="#">Send us</a>
+        </div>
+    </div>
+    <div class="tstroke"></div>
+    <div class="col-12 text-center grey">
+        <p> &copy; iRent 2017 </p>
+        <p>Designed by Manon Adriaens & Ruben De Keersmaecker</p>
+    </div>
+</div>
+</footer>

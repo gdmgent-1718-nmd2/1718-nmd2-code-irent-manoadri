@@ -1,0 +1,65 @@
+---
+layout   : default
+permalink: /detailpagina/checkout/checkout_payment
+# Custom Page Variables
+# ─────────────────────
+title: Checkout Payment
+---
+
+<div class="container container2">
+        <h2 class="header">Checkout</h2>
+            <div class="row">
+                <div class="col-4" align="center">
+                    <p>Your details</p>
+                </div>
+                <div class="col-4" align="center">
+                    <p>Payment</p>
+                </div>
+                <div class="col-4" align="center">
+                    <p>Order complete</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="progress">
+                        <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+            <h4>Payment</h4>
+            <div class="frame2 row justify-content-center">
+                <div class="col-8 col-md-4">
+                    <p>Reference number : R4WEB00515862</p>
+                    <p>Total price : 15.00 EUR</p>
+                    <p>Beneficiary : iRent</p>
+                </div>
+            </div>
+            <div class="frame2 row justify-content-center">
+                <div class="col-8 col-md-4">
+                    <p>Select payment method</p>
+                    <p>VISA 
+                        <a href="{{ site.baseurl }}{% link pages/thankyou.html %}">
+                            <img src="{{ site.baseurl }}/images/visa.png" alt="visa" height="25px">
+                        </a>
+                    </p>
+                    <p>Master Card
+                        <a href="{{ site.baseurl }}{% link pages/thankyou.html %}">
+                            <img src="{{ site.baseurl }}/images/mastercard.jpg" alt="mastercard" height="25px">
+                        </a>
+                    </p>
+                    <p>Bancontact
+                        <a href="{{ site.baseurl }}{% link pages/thankyou.html %}">
+                            <img src="{{ site.baseurl }}/images/bancontact.png" alt="bancontact" height="25px">
+                        </a>
+                    </p>
+                    <p>Maestro
+                        <a href="{{ site.baseurl }}{% link pages/thankyou.html %}">
+                            <img src="{{ site.baseurl }}/images/maestro.svg" alt="maestro" height="25px">
+                        </a>
+                    </p>
+                </div> 
+        </div>
+        <a class="col-8 col-md-3 btn btn-primary" href="{{ site.baseurl }}{% link pages/checkout_details.html %}">Go Back</a>
+    </div>
+    </div>

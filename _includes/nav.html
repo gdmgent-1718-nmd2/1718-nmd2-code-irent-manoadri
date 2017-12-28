@@ -1,37 +1,46 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  
     <!-- websitelogo -->
-    <a class="navbar-brand" href="#">Navbar</a>
-    
-    <!-- hamburger icoon -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <a class="navbar-brand">
+        <img src="{{ site.baseurl }}/images/webicoon.png" height="80px" class="webicoon" alt="Logo">
+    </a>
   
-    <!-- hoofdnavigatie -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-          {% assign links = site.data.navigation %}
-          {% for link in links %}
-              {% assign class = nil %}
-              {% if page.url contains link.url %}
-                  {% assign class = 'active' %}
-              {% endif %}
-              {% if link.sublinks %}
-              {% else %}
-                  <li class="nav-item{{ class }}">
-                      <a class="nav-link" href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
-                  </li>
-              {% endif %}
-          {% endfor %}
+  <!-- hamburger icoon -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- hoofdnavigatie -->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            {% assign links = site.data.navigation %}
+            {% for link in links %}
+                {% assign class = nil %}
+                {% if link.url contains page.url %}
+                    {% assign class = 'active' %}
+                {% endif %}
+                {% if link.sublinks %}
+                    <li class="nav-item dropdown {{ class }}">
+                        <a href="{{ site.baseurl }}{{ link.url }}" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ link.title }} <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            {% for sublink in link.sublinks %}
+                                    <li class="dropdown-item">
+                                        <a class="nav-link" href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
+                                    </li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                {% else %}
+                    <li class="nav-item{{ class }}">
+                        <a class="nav-link text-white" href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        <a href="#"><img src="{{ site.baseurl }}/images/search.png" width="25" height="25" alt="search" class="mr-5"></a>
+        <a href="{{ site.baseurl }}{% link pages/shopping_cart.html %}"><img src="{{ site.baseurl }}/images/shoppingbag.png" width="25" height="25" alt="shoppingbag" class="mr-5"></a>
+      </div>
   
-  
-  
-  
-        <!--li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-      </ul>
-    </div>
-  </nav>
+</nav>
+
+
